@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+ body{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            background-color: #A164DF;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+        }
+
+        #buttons{
+            height: 10vh;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .btn,.stop{
+            height: 3em;
+            width: 7em;
+            border-radius: 2px;
+            color: white;
+            border: none;
+            font-size: large;
+            background-color:#663399;
+            cursor: pointer;
+        }
