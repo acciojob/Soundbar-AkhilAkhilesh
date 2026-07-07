@@ -9,8 +9,9 @@ buttons.forEach((button) => {
             audio.currentTime = 0; 
         }
 //sounds/tada.mp3
+		//https://github.com/acciojob/Soundbar-AkhilAkhilesh/blob/master/sounds/applause.mp3
         const soundName = button.innerText.trim();
-        audio = new Audio(`sounds/${soundName}.mp3`);
+        audio = new Audio(`https://raw.githubusercontent.com/acciojob/Soundbar-AkhilAkhilesh/master/sounds/${soundName}.mp3`);
         
         audio.play().catch(error => {
             console.log("Audio playback failed or was interrupted:", error);
