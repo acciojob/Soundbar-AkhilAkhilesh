@@ -8,9 +8,9 @@ buttons.forEach((button) => {
             audio.pause();
             audio.currentTime = 0; 
         }
-
+//sounds/tada.mp3
         const soundName = button.innerText.trim();
-        audio = new Audio(`./sounds/${soundName}.mp3`);
+        audio = new Audio(`sounds/${soundName}.mp3`);
         
         audio.play().catch(error => {
             console.log("Audio playback failed or was interrupted:", error);
